@@ -28,10 +28,10 @@ class TestsKT3:
             if product_page.is_this_cart_alert(expected):
                 assert True
             else:
-                print("Это уведомление не о добавлении в корзину")
+                print("This is a wrong alert")
                 assert False
         else:
-            print("Уведомление не появилось")
+            print("There was no alert")
             assert False
 
     @pytest.mark.parametrize("expected", [" Success: You have added Samsung Galaxy Tab 10.1 to your shopping cart! "])
